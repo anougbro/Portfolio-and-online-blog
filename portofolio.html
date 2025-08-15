@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Anougbro</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen text-black flex items-center justify-center" style="background-image: url('https://source.unsplash.com/random/1600x900');">
+    <div class="text-center px-4">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Anougbro</h2>
+      <p class="text-lg md:text-xl">I build accessible, responsive web interfaces with precision and care.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-6 text-center">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 bg-gray-100 rounded shadow">HTML</div>
+        <div class="p-4 bg-gray-100 rounded shadow">CSS</div>
+        <div class="p-4 bg-gray-100 rounded shadow">JavaScript</div>
+        <div class="p-4 bg-gray-100 rounded shadow">Accessibility</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-6 text-center">Projects</h3>
+      <!-- <div class="grid md:grid-cols-3 gap-6"> -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="bg-white rounded shadow p-4">
+          <img src="https://images.unsplash.com/photo-1579403124614-197f69d8187b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="rounded mb-4">
+          <h4 class="text-xl font-bold mb-2">Dashboard</h4>
+          <p class="text-gray-700">A fully accessible, component-based UI clone of the Dashboard.</p>
+        </div>
+
+        <!-- Repeat for more projects -->
+        <div class="bg-white rounded shadow p-4">
+          <img src="https://images.unsplash.com/photo-1543622125-91437eb0d8de?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="rounded mb-4">
+          <h4 class="text-xl font-bold mb-2">Web design</h4>
+          <p class="text-gray-700">A fully accessible, component-based UI clone of the web design.</p>
+        </div>
+
+        <!-- Repeat for more projects -->
+         <div class="bg-white rounded shadow p-4">
+          <img src="https://images.unsplash.com/photo-1605379399582-21f603abaed5?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="rounded mb-4">
+          <h4 class="text-xl font-bold mb-2">EduManage</h4>
+          <p class="text-gray-700">A fully accessible, component-based UI clone of the EduManage platform.</p>
+        </div>
+
+        <!-- Repeat for more projects -->
+        <div class="bg-white rounded shadow p-4">
+          <img src="https://images.unsplash.com/photo-1558986377-c44f6a2b50f0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="rounded mb-4">
+          <h4 class="text-xl font-bold mb-2">Todo list</h4>
+          <p class="text-gray-700">A fully accessible, component-based UI clone of the todo list.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto px-4 max-w-xl">
+      <h3 class="text-3xl font-semibold mb-6 text-center">Contact Me</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded" />
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded" />
+        <textarea placeholder="Message" rows="5" class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">&copy; 2025 Anougbro. All rights reserved.</div>
+      <div class="flex space-x-4">
+        <a href="#" aria-label="Twitter" class="hover:text-blue-400">🐦</a>
+        <a href="#" aria-label="GitHub" class="hover:text-gray-400">🐙</a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-blue-300">💼</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
